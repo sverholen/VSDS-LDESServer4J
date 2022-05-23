@@ -4,11 +4,12 @@ services:
     env_file:
       - ./config.local.env
     container_name: ldes-server
+    image: ldes-server
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "${LDES_PORT}:8080"
+      - "8080:8080"
     networks:
       - ldes
 
