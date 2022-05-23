@@ -7,11 +7,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-#    environment:
-#      - MONGO_URL=${MONGO_URL}
-#      - MONGO_DATABASE=${MONGO_DATABASE}
-#      - MONGO_USERNAME=${MONGO_USERNAME}
-#      - MONGO_PASSWORD=${MONGO_PASSWORD}
     ports:
       - "${LDES_PORT}:8080"
     networks:
@@ -20,3 +15,4 @@ services:
 networks:
   ldes:
     driver: bridge
+    
