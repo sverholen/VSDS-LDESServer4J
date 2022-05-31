@@ -24,8 +24,6 @@ The [.env](.env) file allows you to configure the repository for the LDES bom (e
 ```bash
 # The LDES BOM repository
 DOCKER_LDES_BOM_REPO=https://github.com/Informatievlaanderen/VSDS-LDES.git
-# Run the LDES server app on this port
-DOCKER_LDES_SERVER_PORT=6060
 ```
 
 ##### <a name="docker-compose-config-config"></a>The config files: [config.env](docker-compose/config.env) or [config.local.env](docker-compose/config.local.env)
